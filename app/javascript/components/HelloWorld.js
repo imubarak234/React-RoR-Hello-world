@@ -13,14 +13,13 @@ const HelloWorld = () => {
 
   const printState = () => {
     dispatch(fetchGreetingApi());
-    console.log("Printing")
-    console.log(states)
   };
 
     return (
       <div>
-        <h2>Nextings</h2>
-        <button className="btn btn-primary" onClick={() => printState()}>get things</button>
+        <h2>Greetings</h2>
+        <button className="btn btn-primary" onClick={() => printState()}>Get Another Greeting</button>
+        <p className="h3">{ states[0] }</p>
       </div>
     );
 }

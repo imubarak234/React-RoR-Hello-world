@@ -17,8 +17,8 @@ export const fetchGreetingApi = () => async (dispatch) => {
   const greeting = value.data.greeting;
   console.log(value.data.greeting);
   dispatch(addThings(greeting))
+};
 
-}
 
 export const initialState = [];
 
